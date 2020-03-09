@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic,900");
+body {
+  background-color: black;
+  font-family: 'Titillium Web'; }
+  @media only screen and (min-width: 1024px) {
+    body {
+      padding-left: 10%; } }
+
+a {
+  text-decoration: none;
+  color: #2d2d3c; }
+
+.document {
+  color: #2d2d3c;
+  background-color: white;
+  display: flex; }
+  @media only screen and (min-width: 1024px) {
+    .document {
+      width: 80%; } }
+  @media only screen and (max-width: 767px) {
+    .document {
+      flex-direction: column-reverse; } }
+
+#portrait {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.sidebar {
+  font-size: 12px;
+  height: all;
+  background-color: #90caf9;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    .sidebar {
+      width: 350px; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar {
+      display: flex; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar-first-half {
+      display: flex;
+      flex-direction: column; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar-second-half {
+      display: flex;
+      flex-direction: column; } }
+  .sidebar-about {
+    text-align: justify; }
+  .sidebar-title {
+    text-align: center;
+    background-color: #2d2d3c;
+    color: #bbdefb;
+    font-size: 15px; }
+  .sidebar-contacts-element {
+    margin-left: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .sidebar-content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify; }
+  .sidebar-loisirs {
+    width: -moz-available;
+    position: absolute;
+    bottom: 0px; }
+  .sidebar-pleasurebox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem; }
+
+.innerbody {
+  line-height: 90%;
+  font-size: 12px;
+  padding: 3rem; }
+  .innerbody-separator {
+    border: 1px solid #90caf9; }
+    .innerbody-separator-mini {
+      border: 1px solid #90caf9;
+      width: 15%; }
+  .innerbody-content-head {
+    line-height: 60%;
+    font-size: 17px;
+    font-variant: small-caps; }
+    .innerbody-content-head-title {
+      line-height: 100%; }
+    .innerbody-content-head-bluebold {
+      color: #42a5f5;
+      font-weight: bold; }
+  .innerbody-content-title {
+    font-size: 14px;
+    font-weight: bold; }
+  .innerbody-content-element {
+    display: flex; }
+    .innerbody-content-element-date {
+      margin-top: 1em;
+      width: 35%; }
+    .innerbody-content-element-description {
+      width: 65%;
+      text-align: justify; }
+      .innerbody-content-element-description-small {
+        flex: 1; }
+  .innerbody-content-recommandations-box {
+    display: flex; }
+
+/*# sourceMappingURL=style.css.map */

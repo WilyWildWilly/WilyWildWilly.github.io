@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic,900');
+body{
+	background-color: black;
+	@media only screen and (min-width: 1024px) {
+		padding-left: 10%;
+	}
+	
+	font-family: 'Titillium Web';
+}
+a{
+	text-decoration: none;
+	color: rgb(45, 45, 60);
+}
+.document{
+	color: rgb(45, 45, 60);
+	background-color: white;
+	@media only screen and (min-width: 1024px) {
+		width: 80%;
+	}
+	display: flex;
+	@media only screen and (max-width: 767px) {
+		flex-direction: column-reverse;
+	}
+}
+#portrait{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.sidebar{
+	font-size: 12px;
+	@media only screen and (min-width: 768px) {
+		width: 350px;
+	}
+	height: all;
+	background-color: rgb(144,202,249);
+
+		position: relative;
+	
+	@media only screen and (max-width: 767px) {
+		display: flex;
+	}
+	&-first-half{
+		@media only screen and (max-width: 767px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&-second-half{
+		@media only screen and (max-width: 767px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&-photoframe{
+		&-picturebox{
+		}
+	}
+	&-about{
+		text-align: justify;
+	}
+	&-title{
+		text-align: center;
+		background-color: rgb(45, 45, 60);
+		color: rgb(187,222,251);
+		font-size: 15px;
+	}
+	&-contacts{
+		&-element{
+			margin-left: 2rem;
+			margin-top: 1em; 
+			margin-bottom: 1em;
+		}
+	}
+	&-content{
+		margin-left: 2rem;
+		margin-right: 2rem;
+		text-align: justify;
+	}
+	&-loisirs{
+		@media only screen and (min-width: 768px) {
+			
+		}
+		width: -moz-available;
+		position: absolute;
+		bottom: 0px;
+	}
+	&-pleasurebox{
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 1rem;
+	}
+}
+.innerbody{
+	line-height: 90%;
+	font-size: 12px;
+	padding: 3rem;
+	&-separator{
+		border: 1px solid rgb(144,202,249);
+		&-mini{
+			border: 1px solid rgb(144,202,249);
+			width: 15%
+		}
+	}
+	&-content{
+		&-head{
+			line-height: 60%;
+			font-size: 17px;
+			font-variant: small-caps;
+			&-title{
+				line-height: 100%;
+			}
+			&-bluebold{
+				color: rgb(66,165,245);
+				font-weight: bold;
+			}
+		}
+		&-title{
+			font-size: 14px;
+			font-weight: bold;
+		}
+		&-element{
+			display: flex;
+			&-date{
+				margin-top: 1em;
+				width: 35%;
+			}
+			&-description{
+				width: 65%;
+				text-align: justify;
+				&-small{
+					flex: 1;
+				}
+			}
+		}
+		&-recommandations{
+			&-box{
+				display: flex;
+			}
+		}
+	}
+}
