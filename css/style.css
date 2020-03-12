@@ -60,10 +60,12 @@ a {
     margin-left: 2rem;
     margin-right: 2rem;
     text-align: justify; }
-  .sidebar-loisirs {
-    width: -moz-available;
-    position: absolute;
-    bottom: 0px; }
+@-moz-document url-prefix() {
+  @media only screen and (min-width: 768px) {
+    .sidebar-loisirs {
+      position: absolute;
+      bottom: 0px;
+      width: -moz-available; } } }
   .sidebar-pleasurebox {
     display: flex;
     justify-content: space-around;
