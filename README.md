@@ -2,7 +2,7 @@
 
 A personal CV mock-up for the OpenClassrooms Web Designer course path (PSet 2).
 
-Optimized for Gecko ;)
+Optimized for Gecko <3
 
 Original Github repository: https://github.com/WilyWildWilly/WilyWildWilly.github.io
 
