@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic,900");
 body {
-  background-color: black;
   font-family: 'Titillium Web'; }
   @media only screen and (min-width: 1024px) {
     body {
