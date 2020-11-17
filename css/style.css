@@ -4,7 +4,12 @@ body {
   font-family: 'Titillium Web'; }
   @media only screen and (min-width: 1024px) {
     body {
-      padding-left: 10%; } }
+      padding-left: 13%;
+      padding-right: 13%; } }
+  @media only screen and (min-width: 1280px) {
+    body {
+      padding-left: 18%;
+      padding-right: 18%; } }
 
 .bolder {
   font-weight: 800; }
