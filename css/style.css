@@ -4,10 +4,12 @@ body {
   font-family: 'Titillium Web'; }
   @media only screen and (min-width: 1024px) {
     body {
-      padding-left: 13%; } }
+      padding-left: 13%;
+      padding-right: 13%; } }
   @media only screen and (min-width: 1280px) {
     body {
-      padding-left: 18%; } }
+      padding-left: 18%;
+      padding-right: 18%; } }
 
 .bolder {
   font-weight: 600; }
@@ -20,9 +22,6 @@ a {
   color: #2d2d3c;
   background-color: white;
   display: flex; }
-  @media only screen and (min-width: 1024px) {
-    .document {
-      width: 80%; } }
   @media only screen and (max-width: 767px) {
     .document {
       flex-direction: column-reverse; } }
