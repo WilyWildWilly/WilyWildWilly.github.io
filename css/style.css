@@ -32,6 +32,9 @@ dd
   margin-right: auto;
   display: block; }
 
+.bolder {
+  font-weight: bolder; }
+
 .sidebar {
   font-size: 12px;
   height: all;
