@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic,900");
 body {
-  background-color: black;
+  background-color: #25251d;
   font-family: 'Titillium Web'; }
   @media only screen and (min-width: 1024px) {
     body {
@@ -15,19 +15,16 @@ body {
   font-weight: 600; }
 
 .filtered {
-  filter: grayscale(100%);
-  filter: contrast(200%);
-  -webkit-filter: grayscale(100%);
-  -webkit-filter: contrast(200%);
-  opacity: 50%; }
+  filter: hue-rotate(-90deg);
+  -webkit-filter: hue-rotate(-90deg); }
 
 a {
   text-decoration: none;
-  color: #2d2d3c; }
+  color: #b4fab9; }
 
 .document {
-  color: #2d2d3c;
-  background-color: white;
+  color: #e6ffe6;
+  background-color: #25251d;
   display: flex; }
   @media only screen and (max-width: 767px) {
     .document {
@@ -41,7 +38,7 @@ a {
 .sidebar {
   font-size: 12px;
   height: all;
-  background-color: #90caf9;
+  background-color: #25251d;
   position: relative; }
   @media only screen and (min-width: 768px) {
     .sidebar {
@@ -61,8 +58,8 @@ a {
     text-align: justify; }
   .sidebar-title {
     text-align: center;
-    background-color: #2d2d3c;
-    color: #bbdefb;
+    background-color: #b4fab9;
+    color: #25251d;
     font-size: 15px; }
   .sidebar-contacts-element {
     margin-left: 2rem;
@@ -81,25 +78,30 @@ a {
   .sidebar-pleasurebox {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    color: #b4fab9; }
+
+.innerbody-content-title p {
+  color: #b4fab9; }
 
 .innerbody {
   line-height: 90%;
   font-size: 12px;
   padding: 3rem; }
   .innerbody-separator {
-    border: 1px solid #90caf9; }
+    border: 1px solid #b4fab9; }
     .innerbody-separator-mini {
-      border: 1px solid #90caf9;
+      border: 1px solid #b4fab9;
       width: 15%; }
   .innerbody-content-head {
     line-height: 60%;
     font-size: 17px;
     font-variant: small-caps; }
     .innerbody-content-head-title {
-      line-height: 100%; }
+      line-height: 100%;
+      color: #b4fab9; }
     .innerbody-content-head-bluebold {
-      color: #42a5f5;
+      color: #b4fab9;
       font-weight: bold; }
   .innerbody-content-title {
     font-size: 14px;
@@ -126,41 +128,41 @@ a {
   10% {
     opacity: 0.23604; }
   15% {
-    opacity: 0.90626; }
+    opacity: 0.30626; }
   20% {
     opacity: 0.18128; }
   25% {
-    opacity: 0.83891; }
+    opacity: 0.13891; }
   30% {
-    opacity: 0.65583; }
+    opacity: 0.25583; }
   35% {
-    opacity: 0.67807; }
+    opacity: 0.17807; }
   40% {
-    opacity: 0.26559; }
+    opacity: 0.06559; }
   45% {
-    opacity: 0.84693; }
+    opacity: 0.14693; }
   50% {
-    opacity: 0.96019; }
+    opacity: 0.06019; }
   55% {
     opacity: 0.08594; }
   60% {
-    opacity: 0.20313; }
+    opacity: 0.10313; }
   65% {
-    opacity: 0.71988; }
+    opacity: 0.21988; }
   70% {
-    opacity: 0.53455; }
+    opacity: 0.03455; }
   75% {
-    opacity: 0.37288; }
+    opacity: 0.17288; }
   80% {
-    opacity: 0.71428; }
+    opacity: 0.01428; }
   85% {
-    opacity: 0.70419; }
+    opacity: 0.20419; }
   90% {
-    opacity: 0.7003; }
+    opacity: 0.1003; }
   95% {
-    opacity: 0.36108; }
+    opacity: 0.16108; }
   100% {
-    opacity: 0.24387; } }
+    opacity: 0.04387; } }
 @keyframes textShadow {
   0% {
     text-shadow: 0.2389924193px 0 1px rgba(0, 30, 255, 0.5), -0.4389924193px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
