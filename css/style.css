@@ -10,14 +10,20 @@ a {
   text-decoration: none;
   color: #2d2d3c; }
 
+dt {
+  font-weight: bolder; }
+
+dd
 .document {
   color: #2d2d3c;
   background-color: white;
   display: flex; }
   @media only screen and (min-width: 1024px) {
+    dd
     .document {
       width: 80%; } }
   @media only screen and (max-width: 767px) {
+    dd
     .document {
       flex-direction: column-reverse; } }
 
