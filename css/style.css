@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic,900");
 body {
+  background-color: black;
   font-family: 'Titillium Web'; }
   @media only screen and (min-width: 1024px) {
     body {
@@ -12,17 +13,14 @@ a {
 dt {
   font-weight: bolder; }
 
-dd
 .document {
   color: #2d2d3c;
   background-color: white;
   display: flex; }
   @media only screen and (min-width: 1024px) {
-    dd
     .document {
       width: 80%; } }
   @media only screen and (max-width: 767px) {
-    dd
     .document {
       flex-direction: column-reverse; } }
 
@@ -30,9 +28,6 @@ dd
   margin-left: auto;
   margin-right: auto;
   display: block; }
-
-.bolder {
-  font-weight: bolder; }
 
 .sidebar {
   font-size: 12px;
