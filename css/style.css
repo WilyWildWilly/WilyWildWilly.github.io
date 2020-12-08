@@ -73,8 +73,6 @@ a {
 @-moz-document url-prefix() {
   @media only screen and (min-width: 768px) {
     .sidebar-loisirs {
-      position: absolute;
-      bottom: 0px;
       width: -moz-available; } } }
   .sidebar-pleasurebox {
     display: flex;
@@ -164,6 +162,20 @@ a {
     text-shadow: 1.0841838853px 0 1px rgba(0, 30, 255, 0.5), -2.1841838853px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
   100% {
     text-shadow: 1.3208764474px 0 1px rgba(0, 30, 255, 0.5), -2.6208764474px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; } }
+.crt::after {
+  width: 100%;
+  height: 165%;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none; }
+
 .crt::before {
   width: 100%;
   height: 165%;
@@ -174,7 +186,6 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none; }
@@ -184,7 +195,7 @@ a {
 
 @media (min-width: 1024px) {
   .hover-expand-trigger:hover .hover-expand-collapse {
-    max-height: 500px;
+    max-height: 900px;
     transition: max-height 0.35s ease-in-out; }
   .hover-expand-collapse {
     max-height: 0;
