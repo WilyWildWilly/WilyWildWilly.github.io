@@ -103,7 +103,7 @@ function changeSelection() {
 // global functions for the Tracker sample
 function getData() {
   // var promise = fetch("http://api.open-notify.org/iss-now.json");
-  loadJSON("http://api.open-notify.org/iss-now.json", gotData, 'jsonp');
+  loadJSON("https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json", gotData, 'jsonp');
 }
 
 function gotData(data) {
