@@ -103,7 +103,19 @@ function changeSelection() {
 // global functions for the Tracker sample
 function getData() {
   // var promise = fetch("http://api.open-notify.org/iss-now.json");
-  loadJSON("https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json", gotData, 'jsonp');
+  //loadJSON("https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json", gotData, 'jsonp');
+  var response = await fetch("https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json", {
+    headers: {
+      Origin: window.location.protocol + '//' + window.location.host
+    }
+  });
+  if (response.ok) { // if HTTP-status is 200-299
+    // get the response body (the method explained below)
+    var json = await response.json();
+    return(json);
+  } else {
+    alert("HTTP-Error: " + response.status);
+  }
 }
 
 function gotData(data) {
