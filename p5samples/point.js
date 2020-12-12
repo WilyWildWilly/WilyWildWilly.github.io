@@ -39,7 +39,7 @@ function Point() {
     this.applyForce(force);
   }
   this.show = function() {
-    stroke(255, 0, 0, 5);
+    stroke(20, 247, 50, 5);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
 //    point(this.pos.x, this.pos.y);
     this.updatePrev()
