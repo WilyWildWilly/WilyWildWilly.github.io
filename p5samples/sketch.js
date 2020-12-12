@@ -36,7 +36,7 @@ function setup() {
   t = 0;
   // get the width and height for the canvas from the DOM
   boxSizeWidth = document.getElementById("canvas-box").clientWidth;
-  boxSizeHeight = boxSizeWidth * 70 / 100 ;
+  boxSizeHeight = 213;
   createCanvas(boxSizeWidth, boxSizeHeight);
   //having a width and height, setup the perlin noise field variables
   cols = floor(width / scl);

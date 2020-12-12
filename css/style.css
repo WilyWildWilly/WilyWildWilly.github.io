@@ -79,6 +79,11 @@ a {
     justify-content: space-around;
     margin-bottom: 1rem;
     color: #b4fab9; }
+  .sidebar-passionbox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    color: #b4fab9; }
 
 .innerbody-content-title p {
   color: #b4fab9; }
@@ -117,6 +122,9 @@ a {
         flex: 1; }
   .innerbody-content-recommandations-box {
     display: flex; }
+
+iframe {
+  max-height: 218px; }
 
 /* CRT effect */
 @keyframes textShadow {

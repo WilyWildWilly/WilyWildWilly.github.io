@@ -111,6 +111,12 @@ a{
 		margin-bottom: 1rem;
 		color: map-get($colors, "color_2");
 	}
+	&-passionbox{
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 1rem;
+		color: map-get($colors, "color_2");
+}
 }
 .innerbody-content-title p {
 	color: map-get($colors, "color_2");
@@ -165,6 +171,10 @@ a{
 		}
 	}
 }
+iframe {
+	max-height: 218px;
+}
+
 
 
 /* CRT effect */
