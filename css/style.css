@@ -21,7 +21,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #b4fab9; }
+  color: #14f732; }
 
 .document {
   color: #e6ffe6;
@@ -59,7 +59,7 @@ a {
     text-align: justify; }
   .sidebar-title {
     text-align: center;
-    background-color: #b4fab9;
+    background-color: #14f732;
     color: #25251d;
     font-size: 15px; }
   .sidebar-contacts-element {
@@ -78,24 +78,24 @@ a {
     display: flex;
     justify-content: space-around;
     margin-bottom: 1rem;
-    color: #b4fab9; }
+    color: #14f732; }
   .sidebar-passionbox {
     display: flex;
     justify-content: space-around;
     margin-bottom: 1rem;
-    color: #b4fab9; }
+    color: #14f732; }
 
 .innerbody-content-title p {
-  color: #b4fab9; }
+  color: #14f732; }
 
 .innerbody {
   line-height: 90%;
   font-size: 12px;
   padding: 3rem; }
   .innerbody-separator {
-    border: 1px solid #b4fab9; }
+    border: 1px solid #14f732; }
     .innerbody-separator-mini {
-      border: 1px solid #b4fab9;
+      border: 1px solid #14f732;
       width: 15%; }
   .innerbody-content-head {
     line-height: 60%;
@@ -103,9 +103,9 @@ a {
     font-variant: small-caps; }
     .innerbody-content-head-title {
       line-height: 100%;
-      color: #b4fab9; }
+      color: #14f732; }
     .innerbody-content-head-bluebold {
-      color: #b4fab9;
+      color: #14f732;
       font-weight: bold; }
   .innerbody-content-title {
     font-size: 14px;
