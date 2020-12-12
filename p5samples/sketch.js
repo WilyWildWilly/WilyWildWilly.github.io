@@ -1,6 +1,9 @@
+// three main projects in one file (for now):
+// orbiter, iss-tracker and flow-field
+
 //generic variables for iss-tracker
 var img;
-
+// preload the background image for iss-tracker
 function preload() {
   img = loadImage('background/world-map-g-b.jpeg');
 }
@@ -27,9 +30,9 @@ var particles;
 // flowT is an internal counter for the perlin noise flow field
 var flowT = 0;
 
-
+// setup for the three
 function setup() {
-  // time counter
+  // time counter, used by more than one project
   t = 0;
   // get the width and height for the canvas from the DOM
   boxSizeHeight = document.getElementById("canvas-box").clientHeight;
