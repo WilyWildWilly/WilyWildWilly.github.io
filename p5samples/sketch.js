@@ -109,8 +109,8 @@ function getData() {
   })
   .then(res => res.json())
   .then(res => {
-    return(res);
-    // gotData(res);
+    //return(res);
+    gotData(res);
   })
   .catch(err => {
     console.log(err);
