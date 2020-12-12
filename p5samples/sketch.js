@@ -3,7 +3,7 @@
 
 //generic variables for iss-tracker
 var img;
-// preload the background image for iss-tracker
+
 function preload() {
   img = loadImage('background/world-map-g-b.jpeg');
 }
@@ -30,13 +30,13 @@ var particles;
 // flowT is an internal counter for the perlin noise flow field
 var flowT = 0;
 
-// setup for the three
+
 function setup() {
-  // time counter, used by more than one project
+  // time counter
   t = 0;
   // get the width and height for the canvas from the DOM
-  boxSizeHeight = document.getElementById("canvas-box").clientHeight;
   boxSizeWidth = document.getElementById("canvas-box").clientWidth;
+  boxSizeHeight = boxSizeWidth * 70 / 100 ;
   createCanvas(boxSizeWidth, boxSizeHeight);
   //having a width and height, setup the perlin noise field variables
   cols = floor(width / scl);
@@ -59,10 +59,6 @@ function setup() {
   // tracker sample
   if (selectedSample === 1) {
     img = img.resize(boxSizeWidth, boxSizeHeight);
-  }
-
-  if (selectedSample === 2) {
-    console.log("2");
   }
 }
 
@@ -113,12 +109,14 @@ function getData() {
 function gotData(data) {
   background(img)
   displaySample()
-    // this will allow you to see the raw data live in your browser console
-  console.log(data.iss_position.latitude);
-  console.log(data.iss_position.longitude);
-  fill(250, 50, 50, 90);
+  // this will allow you to see the raw data live in your browser console
+  //console.log(data.iss_position.latitude);
+  //console.log(data.iss_position.longitude);
   posX = (parseFloat(data.iss_position.latitude * latConst) + translateX)
   posY = (parseFloat(data.iss_position.longitude * lonConst)* -1 + translateY)
+  console.log(posX);
+  console.log(posY);
+  fill(250, 50, 50, 90);
   ellipse(posX, posY, 10, 10);
 }
 
