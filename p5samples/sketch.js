@@ -122,9 +122,9 @@ function gotData(data) {
   // this will allow you to see the raw data live in your browser console
   // console.log("latitude of the ISS : " + data.iss_position.latitude);
   // console.log("longitude of the ISS: " + data.iss_position.longitude);
-  posX = (parseFloat(data.iss_position.latitude * latConst) + translateX)
-  posY = (parseFloat(data.iss_position.longitude * lonConst)* -1 + translateY)
-  stroke(10, 247, 20);
+  // posX = (parseFloat(data.iss_position.latitude * latConst) + translateX)
+  // posY = (parseFloat(data.iss_position.longitude * lonConst)* -1 + translateY)
+  // stroke(10, 247, 20);
   // ellipse(posX, posY, 10, 10)
   // console.log(posX);
   // console.log(posY);
@@ -160,6 +160,9 @@ function draw() {
     stroke(10, 20, 10);
     line(0, (frameLine - 3), width, (frameLine - 3));
     if(frameLine >= posY + 5){
+      posX = (parseFloat(data.iss_position.latitude * latConst) + translateX)
+      posY = (parseFloat(data.iss_position.longitude * lonConst)* -1 + translateY)
+      stroke(10, 247, 20);
       ellipse(posX, posY, 10, 10)
       console.log(posX);
       console.log(posY);
