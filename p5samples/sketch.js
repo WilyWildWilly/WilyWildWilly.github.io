@@ -118,7 +118,7 @@ function getData() {
 function gotData(data) {
   background(img);
   displaySample();
-  
+  frameLine = 0;
   // this will allow you to see the raw data live in your browser console
   // console.log("latitude of the ISS : " + data.iss_position.latitude);
   // console.log("longitude of the ISS: " + data.iss_position.longitude);
@@ -130,7 +130,6 @@ function gotData(data) {
   console.log(posY);
   fill(250, 50, 50, 90);
   ellipse(posX, posY, 10, 10);
-  frameLine = 0;
 }
 
 
