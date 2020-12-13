@@ -3,7 +3,6 @@
 
 //generic variables for iss-tracker
 var img;
-
 function preload() {
   img = loadImage('background/world-map-g-b.jpeg');
 }
@@ -13,7 +12,7 @@ var translateX;
 var translateY;
 var latConst;
 var lonConst;
-
+var frameLine = 0;
 // generic variables for the perlin noise flow field
 // set the increment
 var inc = 0.1;
@@ -96,7 +95,7 @@ function changeSelection() {
   if (selectedSample >= samples.length) {
     selectedSample = 0;
   }
-  flowT = 0
+  flowT = 0;
 }
 
 
@@ -109,7 +108,6 @@ function getData() {
   })
   .then(res => res.json())
   .then(res => {
-    //return(res);
     gotData(res);
   })
   .catch(err => {
@@ -118,15 +116,16 @@ function getData() {
 }
 
 function gotData(data) {
-  background(img)
-  displaySample()
+  background(img);
+  displaySample();
+  frameLine = 0;
   // this will allow you to see the raw data live in your browser console
-  //console.log(data.iss_position.latitude);
-  //console.log(data.iss_position.longitude);
+  console.log("latitude of the ISS : " + data.iss_position.latitude);
+  console.log("longitude of the ISS: " + data.iss_position.longitude);
   posX = (parseFloat(data.iss_position.latitude * latConst) + translateX)
   posY = (parseFloat(data.iss_position.longitude * lonConst)* -1 + translateY)
-  console.log(posX);
-  console.log(posY);
+  // console.log(posX);
+  // console.log(posY);
   fill(250, 50, 50, 90);
   ellipse(posX, posY, 10, 10);
 }
@@ -154,6 +153,8 @@ function draw() {
     translateY = boxSizeHeight / 2;
     latConst = boxSizeWidth / 360;
     lonConst = boxSizeHeight / 180;
+    fill(20, 247, 50, 80)
+    line(0, frameLine, width, frameLine)
     if (t === 0) {
       getData()
     }
@@ -196,4 +197,5 @@ function draw() {
   if (t >= 119) {
     t = 0;
   }
+  frameLine++;
 }
