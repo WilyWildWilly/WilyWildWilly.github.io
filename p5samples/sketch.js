@@ -67,11 +67,11 @@ function displaySample() {
   for (var i = 0; i < samples.length; i++) {
     // fill light green if selected
     if (i === selectedSample) {
-      fill(37, 37, 29, 60);
+      fill(180, 250, 185, 60);
     }
     // or dark otherwise
     else {
-      fill(180, 250, 185, 60);
+      fill(37, 37, 29, 60);
     }
     // and draw a rectangle
     // rect(((width / 3) * i) + 8, 10, width / 3 - 15, 40)
