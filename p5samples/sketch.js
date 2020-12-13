@@ -6,8 +6,8 @@ var img;
 function preload() {
   img = loadImage('background/world-map-g-b.jpeg');
 }
-var boxSizeHeight
-var boxSizeWidth
+var boxSizeHeight;
+var boxSizeWidth;
 var translateX;
 var translateY;
 var latConst;
@@ -125,11 +125,11 @@ function gotData(data) {
   posX = (parseFloat(data.iss_position.latitude * latConst) + translateX)
   posY = (parseFloat(data.iss_position.longitude * lonConst)* -1 + translateY)
   stroke(10, 247, 20);
-  ellipse(posX, posY, 10, 10)
-  console.log(posX);
-  console.log(posY);
-  fill(250, 50, 50, 90);
-  ellipse(posX, posY, 10, 10);
+  // ellipse(posX, posY, 10, 10)
+  // console.log(posX);
+  // console.log(posY);
+  // fill(250, 50, 50, 90);
+  // ellipse(posX, posY, 10, 10);
 }
 
 
@@ -159,6 +159,13 @@ function draw() {
     line(0, frameLine, width, frameLine);
     stroke(10, 20, 10);
     line(0, (frameLine - 3), width, (frameLine - 3));
+    if(frameLine >= posY + 5){
+      ellipse(posX, posY, 10, 10)
+      console.log(posX);
+      console.log(posY);
+      fill(250, 50, 50, 90);
+      ellipse(posX, posY, 10, 10);
+    }
     if (t === 0) {
       getData()
     }
