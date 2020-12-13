@@ -2,7 +2,7 @@
 body {
   height: max-content;
   background-color: #25251d;
-  font-family: 'Source Code Pro'; }
+  font-family: 'Source Code Pro', monospace; }
   @media only screen and (min-width: 1024px) {
     body {
       padding-left: 13%;
