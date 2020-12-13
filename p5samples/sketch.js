@@ -153,7 +153,7 @@ function draw() {
     translateY = boxSizeHeight / 2;
     latConst = boxSizeWidth / 360;
     lonConst = boxSizeHeight / 180;
-    fill(20, 247, 50, 80)
+    stroke(20, 247, 50, 80);
     line(0, frameLine, width, frameLine)
     if (t === 0) {
       getData()
@@ -197,5 +197,5 @@ function draw() {
   if (t >= 119) {
     t = 0;
   }
-  frameLine++;
+  frameLine += 3;
 }
