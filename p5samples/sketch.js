@@ -155,8 +155,8 @@ function draw() {
     lonConst = boxSizeHeight / 180;
     stroke(20, 247, 50, 80);
     line(0, frameLine, width, frameLine);
-    stroke(10, 20, 10, 80);
-    line(0, frameLine - 3, width, frameLine - 3);
+    stroke(10, 20, 10);
+    line(0, (frameLine - 3), width, (frameLine - 3));
     if (t === 0) {
       getData()
     }
