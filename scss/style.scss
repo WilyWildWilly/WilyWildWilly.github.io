@@ -346,7 +346,7 @@ iframe {
 .crt {
 	animation: textShadow 1.6s infinite;
 	&-box{
-		animation: textShadow 1.6s infinite;
+		animation: boxShadow 1.6s infinite;
 	}
 }
 @media (min-width: 1024px) {

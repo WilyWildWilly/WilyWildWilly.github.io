@@ -244,7 +244,7 @@ iframe {
 .crt {
   animation: textShadow 1.6s infinite; }
   .crt-box {
-    animation: textShadow 1.6s infinite; }
+    animation: boxShadow 1.6s infinite; }
 
 @media (min-width: 1024px) {
   .hover-expand-trigger:hover .hover-expand-collapse {
