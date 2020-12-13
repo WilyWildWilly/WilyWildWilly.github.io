@@ -127,6 +127,49 @@ iframe {
   height: 213px; }
 
 /* CRT effect */
+@keyframes boxShadow {
+  0% {
+    box-shadow: 0.2389924193px 0 1px rgba(0, 30, 255, 0.5), -0.4389924193px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  5% {
+    box-shadow: 1.3928974011px 0 1px rgba(0, 30, 255, 0.5), -2.7928974011px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  10% {
+    box-shadow: 0.0195627584px 0 1px rgba(0, 30, 255, 0.5), -0.0295627584px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  15% {
+    box-shadow: 0.2021853855px 0 1px rgba(0, 30, 255, 0.5), -0.4021853855px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  20% {
+    box-shadow: 1.77940379px 0 1px rgba(0, 30, 255, 0.5), -3.47940379px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  25% {
+    box-shadow: 0.8125630401px 0 1px rgba(0, 30, 255, 0.5), -1.6125630401px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  30% {
+    box-shadow: 0.3515590085px 0 1px rgba(0, 30, 255, 0.5), -0.7015590085px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  35% {
+    box-shadow: 1.9969140477px 0 1px rgba(0, 30, 255, 0.5), -3.8969140477px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  40% {
+    box-shadow: 1.8709056148px 0 1px rgba(0, 30, 255, 0.5), -3.8709056148px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  45% {
+    box-shadow: 1.1310569634px 0 1px rgba(0, 30, 255, 0.5), -2.2310569634px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  50% {
+    box-shadow: 0.0808429042px 0 1px rgba(0, 30, 255, 0.5), -0.0808429042px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  55% {
+    box-shadow: 1.8758461067px 0 1px rgba(0, 30, 255, 0.5), -2.3758461067px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  60% {
+    box-shadow: 1.1021930511px 0 1px rgba(0, 30, 255, 0.5), -2.2021930511px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  65% {
+    box-shadow: 1.4638780615px 0 1px rgba(0, 30, 255, 0.5), -2.8638780615px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  70% {
+    box-shadow: 0.2887402516px 0 1px rgba(0, 30, 255, 0.5), -0.4887402516px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  75% {
+    box-shadow: 0.9948491306px 0 1px rgba(0, 30, 255, 0.5), -1.8948491306px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  80% {
+    box-shadow: 0.0833037308px 0 1px rgba(0, 30, 255, 0.5), -0.0833037308px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  85% {
+    box-shadow: 0.0976982726px 0 1px rgba(0, 30, 255, 0.5), -0.0976982726px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  90% {
+    box-shadow: 1.7433397615px 0 1px rgba(0, 30, 255, 0.5), -3.4433397615px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  95% {
+    box-shadow: 1.0841838853px 0 1px rgba(0, 30, 255, 0.5), -2.1841838853px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
+  100% {
+    box-shadow: 1.3208764474px 0 1px rgba(0, 30, 255, 0.5), -2.6208764474px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; } }
 @keyframes textShadow {
   0% {
     text-shadow: 0.2389924193px 0 1px rgba(0, 30, 255, 0.5), -0.4389924193px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px; }
@@ -200,6 +243,8 @@ iframe {
 
 .crt {
   animation: textShadow 1.6s infinite; }
+  .crt-box {
+    animation: textShadow 1.6s infinite; }
 
 @media (min-width: 1024px) {
   .hover-expand-trigger:hover .hover-expand-collapse {
