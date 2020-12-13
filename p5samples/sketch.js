@@ -154,14 +154,16 @@ function draw() {
     latConst = boxSizeWidth / 360;
     lonConst = boxSizeHeight / 180;
     stroke(20, 247, 50, 80);
-    line(0, frameLine, width, frameLine)
+    line(0, frameLine, width, frameLine);
+    stroke(10, 20, 10, 80);
+    line(0, frameLine - 3, width, frameLine - 3);
     if (t === 0) {
       getData()
     }
   }
   if (selectedSample === 2) {
     if (flowT === 0) {
-      background(10, 10, 10);
+      background(10, 20, 10);
     }
     if (flowT < 2000) {
       var yoff = 0;
