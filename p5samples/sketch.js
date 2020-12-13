@@ -80,6 +80,7 @@ function displaySample() {
     // } else {
     //   fill(180, 250, 185, 60);
     // }
+    noStroke();
     textFont("courier new")
     text(samples[i], ((width / 3) * i) + 15, 30);
   }
