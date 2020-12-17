@@ -52,8 +52,8 @@ function setup() {
   if (selectedSample === 0) {
     translateX = 0;
     translateY = 0;
-    particle = new Particle(createVector(width / 2, 20), 2, createVector(2.1, 0));
-    moon = new Particle(createVector(particle.pos.x, particle.pos.y + 13), 0.5, createVector(1.3, 0));
+    particle = new Particle(createVector(width / 2, 20), 2, createVector(1.8, 0));
+    moon = new Particle(createVector(particle.pos.x, particle.pos.y + 13), 0.5, createVector(0.8, 0));
     attractor = new Attractor(width / 2, height / 2);
   }
   // tracker sample
