@@ -53,7 +53,7 @@ function setup() {
     translateX = 0;
     translateY = 0;
     particle = new Particle(createVector(width / 2, 20), 2, createVector(1.8, 0));
-    moon = new Particle(createVector(particle.pos.x, particle.pos.y + 13), 0.5, createVector(0.7, 0));
+    moon = new Particle(createVector(particle.pos.x, particle.pos.y + 13), 0.5, createVector(0.85, 0));
     attractor = new Attractor(width / 2, height / 2);
   }
   // tracker sample
