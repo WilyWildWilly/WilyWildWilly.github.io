@@ -2,7 +2,7 @@ var Attractor = function() {
   this.pos = createVector(width / 2, height / 2);
   this.mass = 20;
   this.G = 1;
-  this.size = (sqrt(this.mass * 100));
+  this.size = (sqrt(this.mass * 80));
 
   this.calculateAttraction = function(p) {
     // calculate direction of force

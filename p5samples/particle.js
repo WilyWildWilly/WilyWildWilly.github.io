@@ -4,7 +4,7 @@ function Particle(position, mass, vel) {
   this.vel = vel;
   this.acc = createVector(0, 0);
   this.mass = mass;
-  this.size = (sqrt(this.mass * 100));
+  this.size = (sqrt(this.mass * 80));
 
   this.calculateAttraction = function(p) {
     // calculate direction of force
