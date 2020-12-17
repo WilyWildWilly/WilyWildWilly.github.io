@@ -29,7 +29,7 @@ function Particle(position, mass, vel) {
     this.vel.add(force.div(this.mass));
   }
   this.display = function() {
-    fill(180, 250, 185);
+    fill(10, 247, 20);
     ellipse(this.pos.x, this.pos.y, this.size, this.size);
   }
 }

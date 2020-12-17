@@ -46,7 +46,7 @@ function setup() {
   }
   // this array and selector are used to keep track of what to execute
   samples = ["physics", "astronomy", "maths"]
-  legends = ["modelisation of a star system", "real-time tracking of the ISS", "perlin noise flow field visualisation"]
+  legends = ["modelisation of a star system", "real-time tracking of the ISS", "visualisation of a dynamic 2D flow field"]
   selectedSample = 0;
   // attractor sample
   if (selectedSample === 0) {
