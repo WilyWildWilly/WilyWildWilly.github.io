@@ -45,7 +45,8 @@ function setup() {
     particles[i] = new Point();
   }
   // this array and selector are used to keep track of what to execute
-  samples = ["orbiter", "iss-tracker", "flow-field"]
+  samples = ["physics", "astronomy", "maths"]
+  legends = ["modelisation of a star system", "real-time tracking of the ISS", "perlin noise flow field visualisation"]
   selectedSample = 0;
   // attractor sample
   if (selectedSample === 0) {
@@ -76,6 +77,7 @@ function displaySample() {
     noStroke();
     textFont("courier new")
     text(samples[i], ((width / 3) * i) + 15, 30);
+    text(legends[selectedSample], 5, height - 5);
   }
 }
 
