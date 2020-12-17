@@ -124,7 +124,8 @@ a {
     display: flex; }
 
 iframe {
-  height: 213px; }
+  height: 213px;
+  border: 0; }
 
 /* CRT effect */
 @keyframes boxShadow {
