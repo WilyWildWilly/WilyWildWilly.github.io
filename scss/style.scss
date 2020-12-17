@@ -58,7 +58,8 @@ a{
 		position: relative;
 	
 	@media only screen and (max-width: 767px) {
-		display: flex;
+    display: flex;
+    flex-direction: column;
 	}
 	&-first-half{
 		@media only screen and (max-width: 767px) {
