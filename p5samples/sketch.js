@@ -119,7 +119,7 @@ function gotData(data) {
   console.log("latitude of the ISS : " + data.iss_position.latitude);
   console.log("longitude of the ISS: " + data.iss_position.longitude);
   posX = (parseFloat(data.iss_position.latitude * latConst) + translateX);
-  posY = map((parseFloat(data.iss_position.longitude)), -180, 180, 0, 213) * -1;
+  posY = map((parseFloat(data.iss_position.longitude) * -1), -180, 180, 0, 213);
   stroke(10, 247, 20);
   ellipse(posX, posY, 10, 10)
   // console.log(posX);
