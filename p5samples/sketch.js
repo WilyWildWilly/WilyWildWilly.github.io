@@ -73,13 +73,6 @@ function displaySample() {
     else {
       fill(37, 37, 29, 60);
     }
-    // and draw a rectangle
-    // rect(((width / 3) * i) + 8, 10, width / 3 - 15, 40)
-    // if (i === selectedSample) {
-    //   fill(37, 37, 29, 60);
-    // } else {
-    //   fill(180, 250, 185, 60);
-    // }
     noStroke();
     textFont("courier new")
     text(samples[i], ((width / 3) * i) + 15, 30);
@@ -96,14 +89,14 @@ function changeSelection() {
   if (selectedSample >= samples.length) {
     selectedSample = 0;
   }
+  // reset the perlin noise time variable
   flowT = 0;
 }
 
 
 // global functions for the Tracker sample
+// fetch-get the data for the iss tracker
 function getData() {
-  // var promise = fetch("http://api.open-notify.org/iss-now.json");
-  //loadJSON("http://api.open-notify.org/iss-now.json", gotData, 'jsonp');
   fetch("https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json", {
     headers: { Origin: window.location.host }
   })
@@ -115,7 +108,7 @@ function getData() {
     console.log(err);
   });
 }
-
+// turn the data into coordinates and represent them
 function gotData(data) {
   background(img);
   displaySample();
@@ -124,7 +117,7 @@ function gotData(data) {
   // console.log("latitude of the ISS : " + data.iss_position.latitude);
   // console.log("longitude of the ISS: " + data.iss_position.longitude);
   posX = (parseFloat(data.iss_position.latitude * latConst) + translateX)
-  posY = (parseFloat(data.iss_position.longitude * lonConst)* -1 + translateY)
+  posY = map((parseFloat(data.iss_position.longitude), -180, 180, 0, 213)
   stroke(10, 247, 20);
   ellipse(posX, posY, 10, 10)
   console.log(posX);
