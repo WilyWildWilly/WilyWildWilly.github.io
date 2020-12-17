@@ -132,7 +132,7 @@ function gotData(data) {
 function draw() {
   //case orbiter
   if (selectedSample === 0) {
-    background(50);
+    background(37, 37, 29);
     var force = attractor.calculateAttraction(particle);
     particle.applyForce(force);
     particle.update();
@@ -161,7 +161,7 @@ function draw() {
   }
   if (selectedSample === 2) {
     if (flowT === 0) {
-      background(10, 20, 10);
+      background(37, 37, 29);
     }
     if (flowT < 2000) {
       var yoff = 0;
