@@ -68,15 +68,16 @@ function displaySample() {
   for (var i = 0; i < samples.length; i++) {
     // fill light green if selected
     if (i === selectedSample) {
-      fill(180, 250, 185, 60);
+      fill(20, 247, 50, 60);
     }
     // or dark otherwise
     else {
       fill(37, 37, 29, 60);
     }
-    noStroke();
+    stroke(37, 37, 29, 60);
     textFont("courier new")
     text(samples[i], ((width / 3) * i) + 15, 30);
+    fill(20, 247, 50)
     text(legends[selectedSample], 5, height - 5);
   }
 }
