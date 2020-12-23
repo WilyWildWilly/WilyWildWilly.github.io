@@ -100,7 +100,8 @@ function changeSelection() {
 // global functions for the Tracker sample
 // fetch-get the data for the iss tracker
 function getData() {
-  fetch("https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json", {
+  // fetch("https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json", {
+  fetch("http://api.open-notify.org/iss-now.json", {
     headers: { Origin: window.location.host }
   })
   .then(res => res.json())
